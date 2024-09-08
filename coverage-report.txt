@@ -1,0 +1,25 @@
+Compiling 48 files with Solc 0.8.19
+Solc 0.8.19 finished in 6.28s
+Compiler run successful!
+Analysing contracts...
+Running tests...
+
+Ran 14 tests for test/unit/RaffleTest.t.sol:RaffleTest
+[PASS] testCheckUpKeepReturnsFalseIfEnoughTimeHasntPassed() (gas: 73348)
+[PASS] testCheckUpKeepReturnsFalseIfHasNoBalance() (gas: 20940)
+[PASS] testCheckUpKeepReturnsFalseIfRaffleIsntOpen() (gas: 225739)
+[PASS] testCheckUpKeepReturnsTrueWhenParametersAreGood() (gas: 77028)
+[PASS] testDontAllowPlayersToEnterWhileRaffleIsCalculating() (gas: 230663)
+[PASS] testEnteringRaffleEmitsEvent() (gas: 69770)
+[PASS] testFulfilRandomWordsCanOnlyBeCalledAfterPerformUpKeep(uint256) (runs: 256, μ: 82515, ~: 82515)
+[PASS] testFulfillRandomWordsPickAWinnerResetsAndSendsMoney() (gas: 328607)
+[PASS] testPerformUpKeepCanOnlyRunIfCheckUpKeepIsTrue() (gas: 221667)
+[PASS] testPerformUpKeepRevertsIfCheckUpKeepIsFalse() (gas: 74912)
+[PASS] testPerformUpKeepUpdatesRaffleStateAndEmitsRequestId() (gas: 230761)
+[PASS] testRaffleInitializesInOpenState() (gas: 8091)
+[PASS] testRaffleRecorsPlayersWhenTheyEnter() (gas: 69511)
+[PASS] testRaffleRevertWhenYouDontPayEnough() (gas: 11171)
+Suite result: ok. 14 passed; 0 failed; 0 skipped; finished in 1.13s (104.49ms CPU time)
+
+Ran 1 test suite in 1.13s (1.13s CPU time): 14 tests passed, 0 failed, 0 skipped (14 total tests)
+Wrote LCOV report.
